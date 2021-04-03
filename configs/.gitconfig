@@ -1,0 +1,19 @@
+[alias]
+  	ck = checkout
+	mm = commit --amend
+	cm = commit -m
+	ca = commit -am
+	ci = commit
+	st = status
+	br = branch
+	df = diff
+	rst = reset --hard
+	mg = merge
+	mt = mergetool
+	# 使用命令 git lg 可以查看更简洁的历史记录
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+
+	# 该配置使得每次推送只需要 git push 即可，默认 push 当前 branch 
+	# 如果没有该配置，推送代码一般要 git push origin master
+[push]
+	default = current
