@@ -1,7 +1,7 @@
 # 注意，路径应该写为这种格式 /d/code/games/thunder_plane
-set repo_root=/path/to/repo
+repo_root=/path/to/repo
 
-# command alias
+# command alias (等于号两边不要有空格)
 g=git
 
 alias gc="git checkout"
